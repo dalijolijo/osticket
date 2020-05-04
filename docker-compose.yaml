@@ -1,0 +1,25 @@
+version: "3.2"
+
+services: 
+  db: 
+    image: mariadb:latest
+    command: --default-authentication-plugin=mysql_native_password
+    container_name: mariadb_ost
+    ports:
+      - "3316:3306"
+    volumes: 
+      - ./mysql/data:/var/lib/mysql:rw
+    environment: 
+      - MYSQL_ROOT_PASSWORD=yourPassword
+    restart: always
+
+  webserver:
+    depends_on: 
+      - db 
+    image: osticket
+    container_name: osticket_r
+    restart: always
+    ports: 
+     - 8100:80
+    volumes: 
+      - ./osTicket:/var/www/html:rw
