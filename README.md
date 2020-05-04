@@ -15,7 +15,7 @@ Choose your MariaDB Root Password and set the MYSQL_ROOT_PASSWORD environment va
 Enter mariadb_ost shell
 $ docker exec -it mariadb_ost /bin/sh
 Create osticket database
-mysql -u root -p -e "CREATE DATABASE osticket"
+$ mysql -u root -p -e "CREATE DATABASE osticket"
 
 Exit container's shell
 exit
