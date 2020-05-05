@@ -40,7 +40,7 @@ Create osticket database
 Exit container's shell
 
 `$ exit`
-
+Change ost-config.php permissions to 0666 (`$ chmod 0666 osTicket/include/ost-config.php`)
 Reach OSTicket Installation script here: http://localhost:8100
 
 The **DB credentials** are: 
@@ -54,7 +54,7 @@ Host: db
 After installation enter Webserver service in order to: 
 
 - Delete the setup folder (`$ rm -fr osticket/setup`); 
-- Change permissions to 0644 (`$ chmod 0644 osticket/include/ost-config.php`)
+- Change permissions to 0644 (`$ chmod 0644 osTicket/include/ost-config.php`)
 
 To start the service run: 
 
