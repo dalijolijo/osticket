@@ -23,29 +23,21 @@ Build the WebServer Docker Image (based on php:7.3-apache)
 
 Edit docker-compose.yaml
 
-Choose your MariaDB Root Password and set the MYSQL_ROOT_PASSWORD environment variable.
+Choose your MySQLDB Root Password and set the MYSQL_ROOT_PASSWORD environment variable.
 
 Start the service:
 
 `$ sudo docker-compose up -d` 
 
-Enter mariadb_ost shell
+Change ost-config.php permissions to 0666 
 
-`$ sudo docker exec -it mariadb_ost /bin/sh`
+`$ chmod 0666 osTicket/include/ost-config.php`
 
-Create osticket database
-
-`$ mysql -u root -p -e "CREATE DATABASE osticket"`
-
-Exit container's shell
-
-`$ exit`
-Change ost-config.php permissions to 0666 (`$ chmod 0666 osTicket/include/ost-config.php`)
 Reach OSTicket Installation script here: http://localhost:8100
 
 The **DB credentials** are: 
 
-Username: root
+Username: osticket
 
 Password: your_root_password
 
@@ -53,7 +45,7 @@ Host: db
 
 After installation enter Webserver service in order to: 
 
-- Delete the setup folder (`$ rm -fr osticket/setup`); 
+- Delete the setup folder (`$ rm -fr osTicket/setup`); 
 - Change permissions to 0644 (`$ chmod 0644 osTicket/include/ost-config.php`)
 
 To start the service run: 
