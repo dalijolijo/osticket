@@ -3,7 +3,7 @@ Simple osTicket installation using docker and docker compose
 
 First you need to install on your system **[Docker](https://www.docker.com/get-started)**, **[Docker-Compose](https://docs.docker.com/compose/install/)** and **[Git](https://git-scm.com/downloads)** that are cross-platform.
 
-Clone this project:
+Get this project:
 
 `$ git clone https://github.com/marcogarro/osticket.git`
 
