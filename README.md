@@ -7,6 +7,8 @@ Get this project:
 
 `$ git clone https://github.com/marcogarro/osticket.git`
 
+`$ cd osticket`
+
 Get **osTicket** from Github
 
 `$ git clone https://github.com/osTicket/osTicket.git`
