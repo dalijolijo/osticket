@@ -1,16 +1,22 @@
 version: "3.2"
 
 services: 
-  db: 
-    image: mariadb:latest
+  db:
+    image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
-    container_name: mariadb_ost
+    container_name: mysql_ost
     ports:
       - "3316:3306"
     volumes: 
       - ./mysql/data:/var/lib/mysql:rw
+      - ./dump:/docker-entrypoint-initdb.d
     environment: 
-      - MYSQL_ROOT_PASSWORD=yourPassword
+      - MYSQL_DATABASE=osticket
+      - MYSQL_USER=osticket
+      - MYSQL_PASSWORD=zippola77
+      - MYSQL_ROOT_PASSWORD=zippola77
+    expose: 
+      - "3306"
     restart: always
 
   webserver:
