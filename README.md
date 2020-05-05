@@ -41,10 +41,6 @@ Exit container's shell
 
 `$ exit`
 
-Run Docker Compose to run **osTicket** installation
-
-`$ sudo docker-compose up -d`
-
 Reach OSTicket Installation script here: http://localhost:8100
 
 The **DB credentials** are: 
