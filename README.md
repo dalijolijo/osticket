@@ -39,7 +39,7 @@ The **DB credentials** are:
 
 Username: osticket
 
-Password: your_root_password
+Password: your_osticket_password
 
 Host: db
 
