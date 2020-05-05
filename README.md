@@ -43,10 +43,15 @@ Password: your_osticket_password
 
 Host: db
 
-After installation enter Webserver service in order to: 
+After installation's complete 
 
-- Delete the setup folder (`$ rm -fr osTicket/setup`); 
-- Change permissions to 0644 (`$ chmod 0644 osTicket/include/ost-config.php`)
+Delete the setup folder
+
+`$ rm -fr osTicket/setup`
+
+Change ost-config.php's permissions to 0644
+
+`$ chmod 0644 osTicket/include/ost-config.php`
 
 To start the service run: 
 
