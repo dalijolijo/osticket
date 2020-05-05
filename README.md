@@ -15,7 +15,7 @@ Get **osTicket** from Github
 
 Rename ost-sampleconfig.php in ost-config.php
 
-`$ mv osticket/include/ost-sampleconfig.php osticket/include/ost-config.php`
+`$ mv osTicket/include/ost-sampleconfig.php osTicket/include/ost-config.php`
 
 Build the WebServer Docker Image (based on php:7.3-apache)
 
