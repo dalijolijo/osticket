@@ -25,9 +25,13 @@ Edit docker-compose.yaml
 
 Choose your MariaDB Root Password and set the MYSQL_ROOT_PASSWORD environment variable.
 
+Start the service:
+
+`$ sudo docker-compose up -d` 
+
 Enter mariadb_ost shell
 
-`$ docker exec -it mariadb_ost /bin/sh`
+`$ sudo docker exec -it mariadb_ost /bin/sh`
 
 Create osticket database
 
@@ -39,7 +43,7 @@ Exit container's shell
 
 Run Docker Compose to run **osTicket** installation
 
-`$ docker-compose up -d`
+`$ sudo docker-compose up -d`
 
 Reach OSTicket Installation script here: http://localhost:8100
 
@@ -58,8 +62,8 @@ After installation enter Webserver service in order to:
 
 To start the service run: 
 
-`$ docker-compose up -d`
+`$ sudo docker-compose up -d`
 
 To stop the service run:
 
-`$ docker-compose down`
+`$ sudo docker-compose down`
