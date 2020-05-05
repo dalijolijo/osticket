@@ -29,11 +29,11 @@ Enter mariadb_ost shell
 
 Create osticket database
 
-`# mysql -u root -p -e "CREATE DATABASE osticket"
+`$ mysql -u root -p -e "CREATE DATABASE osticket"
 
 Exit container's shell
 
-`# exit`
+`$ exit`
 
 Run Docker Compose to run OSticket installation
 
