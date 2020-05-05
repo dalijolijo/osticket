@@ -19,7 +19,7 @@ Rename ost-sampleconfig.php in ost-config.php
 
 Build the WebServer Docker Image (based on php:7.3-apache)
 
-`$ docker build -t osticket .`
+`$ sudo docker build -t osticket .`
 
 Edit docker-compose.yaml
 
