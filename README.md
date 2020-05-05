@@ -1,5 +1,5 @@
 # osticket
-Simple osTicket installation using docker and docker compose
+A simple **osTicket** installation using docker and docker compose
 
 First you need to install on your system **[Docker](https://www.docker.com/get-started)**, **[Docker-Compose](https://docs.docker.com/compose/install/)** and **[Git](https://git-scm.com/downloads)** that are cross-platform.
 
@@ -7,7 +7,7 @@ Get this project:
 
 `$ git clone https://github.com/marcogarro/osticket.git`
 
-Get OSticket from Github
+Get **osTicket** from Github
 
 `$ git clone https://github.com/osTicket/osTicket.git`
 
@@ -41,7 +41,7 @@ Run Docker Compose to run OSticket installation
 
 Reach OSTicket Installation script here: http://localhost:8100
 
-The DB credential are: 
+The **DB credentials** are: 
 
 Username: root
 
@@ -52,7 +52,7 @@ Host: db
 After installation enter Webserver service in order to: 
 
 - Cancel the setup folder; 
-- Change permission to 0644 (chmod 0644 include/ost-config.php)
+- Change permissions to 0644 (chmod 0644 include/ost-config.php)
 
 To start the service run: 
 
