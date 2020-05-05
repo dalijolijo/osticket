@@ -23,7 +23,7 @@ Build the WebServer Docker Image (based on php:7.3-apache)
 
 Edit docker-compose.yaml
 
-Choose your MySQLDB Root Password and set the MYSQL_ROOT_PASSWORD environment variable.
+Choose your MySQLDB osticket and root passwords and set the MYSQL_ROOT_PASSWORD and MYSQL_PASSWORD environment variables.
 
 Start the service:
 
