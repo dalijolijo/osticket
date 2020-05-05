@@ -13,8 +13,8 @@ services:
     environment: 
       - MYSQL_DATABASE=osticket
       - MYSQL_USER=osticket
-      - MYSQL_PASSWORD=zippola77
-      - MYSQL_ROOT_PASSWORD=zippola77
+      - MYSQL_PASSWORD=your_osticket_password
+      - MYSQL_ROOT_PASSWORD=your_root_password
     expose: 
       - "3306"
     restart: always
