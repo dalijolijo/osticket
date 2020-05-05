@@ -2,20 +2,23 @@
 Simple osTicket installation using docker and docker compose
 
 Get OSticket from Github
-$ git clone https://github.com/osTicket/osTicket.git
+
+`$ git clone https://github.com/osTicket/osTicket.git`
 
 Rename ost-sampleconfig.php in ost-config.php
-$ mv osticket/include/ost-sampleconfig.php osticket/include/ost-config.php
+`$ mv osticket/include/ost-sampleconfig.php osticket/include/ost-config.php`
 
 Build the WebServer Docker Image (based on php:7.3-apache)
-$ docker build -t osticket .
+`$ docker build -t osticket .`
 
 Edit docker-compose.yaml
 Choose your MariaDB Root Password and set the MYSQL_ROOT_PASSWORD environment variable.
+
 Enter mariadb_ost shell
-$ docker exec -it mariadb_ost /bin/sh
+`$ docker exec -it mariadb_ost /bin/sh`
+
 Create osticket database
-$ mysql -u root -p -e "CREATE DATABASE osticket"
+`$ mysql -u root -p -e "CREATE DATABASE osticket"
 
 Exit container's shell
 exit
