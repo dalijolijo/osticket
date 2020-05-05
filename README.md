@@ -51,8 +51,8 @@ Host: db
 
 After installation enter Webserver service in order to: 
 
-- Cancel the setup folder; 
-- Change permissions to 0644 (chmod 0644 include/ost-config.php)
+- Delete the setup folder (`$ rm -fr osticket/setup`); 
+- Change permissions to 0644 (`$ chmod 0644 osticket/include/ost-config.php`)
 
 To start the service run: 
 
