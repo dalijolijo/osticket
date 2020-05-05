@@ -35,7 +35,7 @@ Exit container's shell
 
 `$ exit`
 
-Run Docker Compose to run OSticket installation
+Run Docker Compose to run **osTicket** installation
 
 `$ docker-compose up -d`
 
